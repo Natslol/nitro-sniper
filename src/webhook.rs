@@ -102,7 +102,7 @@ pub async fn send(gift_code: String, now: Instant, msg: &Message) -> Result<(), 
             println!("{}", format!("[{}] Webhook Rate-limited...\n", chrono::Local::now().format("%H:%M")).red())
         }
         _ => {
-            println!("{}", format!("[{}] Received unknown response.\n", chrono::Local::now().format("%H:%M")).red())
+            println!("{}", format!("[{}] Received unknown response. (webhook)\n", chrono::Local::now().format("%H:%M")).red())
         }
     }
     Ok(())
