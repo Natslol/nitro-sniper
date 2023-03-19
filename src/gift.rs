@@ -38,7 +38,7 @@ pub async fn req(gift_code: String, msg: &Message) -> Result<(), Box<dyn Error>>
             println!("{}", format!("[{}] Rate-limited...", chrono::Local::now().format("%H:%M")).red())
         }
         _ => {
-            println!("{}", format!("[{}] Received unknown response (webhook).", chrono::Local::now().format("%H:%M")).red())
+            println!("{}", format!("[{}] Received unknown response.", chrono::Local::now().format("%H:%M")).red())
         }
     }
     Ok(())
