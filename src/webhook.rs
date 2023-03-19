@@ -1,6 +1,4 @@
 use std::error::Error;
-use std::fs::File;
-use std::io::Write;
 use std::time::Instant;
 use colorful::Colorful;
 use reqwest::{Client, Body};
@@ -92,7 +90,7 @@ pub async fn send(gift_code: String, now: Instant, msg: &Message) -> Result<(), 
             println!("{}", format!("[{}] Sent to webhook.\n", chrono::Local::now().format("%H:%M")).green());
         },
         400 => {
-            println!("{}", format!("[{}] Bad request webhook (did you change something ?)."\n, chrono::Local::now().format("%H:%M")).yellow());
+            println!("{}", format!("[{}] Bad request webhook (did you change something ?).\n", chrono::Local::now().format("%H:%M")).yellow());
         },
         404 => {
             println!("{}", format!("[{}] Your webhook doesn't exist.\n", chrono::Local::now().format("%H:%M")).light_red());
