@@ -1,6 +1,8 @@
 # Nitro Sniper
 > **Warning** use this tool for educational purposes only, I'm not responsable for any discord ban
 
+## Please be sure to have a phone number on your account or you'll be phone locked
+
 
 ## Video
 
